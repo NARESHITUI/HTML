@@ -1,0 +1,86 @@
+<html>
+<head>
+ <title>Invoice</title>    
+ <style>
+  table{
+   margin:auto;
+   font-size:22px; 
+   width:80%;
+   border-collapse:collapse;
+  }
+     tr{
+         height:45px;
+     }     
+     td, th{
+        border:1px solid black; 
+     } 
+     thead tr,tfoot tr{
+         background-color:gray;
+     }
+ </style>    
+</head>
+    
+<body>
+<table>
+ <caption>Invoice</caption>    
+ <thead>
+   <tr>
+     <th colspan="3">Invoice #12345678 </th>       
+     <th>19th October 2019</th>       
+   </tr>     
+ </thead> 
+
+ <tbody>
+   <tr>
+    <td colspan=2>
+      <strong>Pay To:</strong> <br>
+      Naresh Tech<br>
+      Ameerpet <br>
+      Hyderabad, Telangana    
+    </td>       
+    <td colspan=2>   
+     <strong>Customer:</strong><br>   
+      Sunil Joseph<br>
+      Mothinagar <br>
+      Hyderabad, Telangana  
+   </td>    
+   </tr> 
+    
+   <tr style="background-color:gray">
+    <th>Name/ Description</th>       
+    <th>Qty.</th>   
+    <th>@</th>   
+    <th>Cost</th>   
+   </tr>    
+  
+   <tr>
+    <td>Core Java</td>       
+    <td>01</td>       
+    <td>1600</td>   
+    <td>1600.00</td>   
+   </tr>  
+   <tr>
+    <td>Adv Java</td>       
+    <td>02</td>       
+    <td>1500</td>   
+    <td>3200.00</td>   
+   </tr>
+   <tr>
+       <th colspan=3>Sub-Total</th>
+       <td>4800.00</td>
+   </tr>   
+   <tr>
+       <th colspan=2>Tax</th>
+       <td>8%</td>
+       <td>384.00</td>
+   </tr> 
+    </tbody>
+    <tfoot>
+   <tr>
+       <th colspan=3>Grant Total</th>
+       <th>&#8377; 5184.00</th>
+   </tr>     
+ </tfoot>    
+</table>    
+</body>    
+</html>
