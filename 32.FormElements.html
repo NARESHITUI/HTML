@@ -1,0 +1,116 @@
+<html>
+<head>
+ <title>HTML | Form Elements</title>    
+ <style>
+     div{
+         font-size:20px;
+         background-color:coral;
+         padding:2px 5px;
+         width:40%;
+     }     
+ </style>    
+</head>
+    
+<body>
+ <h2>Login Form</h2>    
+ <div>
+  <form action="Login.jsp" name="login_form" method="get">
+  <p>
+   <label for="user">User Name</label> 
+   <input type="text" name=uid id="user">      
+  </p>  
+  <p>
+   <label for="pass">Password</label>
+   <input type="password" name="pwd" id="pass">
+  </p>      
+  <p>
+    <input type="submit" value="L o g i n">  
+  </p>      
+  </form>     
+ </div>    
+    
+ <h2>Login Form with Table</h2>    
+ <div>
+  <form action="Login.jsp" name="login_form1" method="post">
+  <table>
+  <tr>
+   <td>
+    <label for="user1">User Name</label> 
+   </td>       
+   <td>
+    <input type="text" name=uid id="user1">      
+   </td>
+  </tr>      
+  <tr>
+   <td>
+   <label for="pass1">Password</label>
+   </td>       
+   <td>
+   <input type="password" name="pwd" id="pass1">
+  </td>
+  </tr>      
+  <tr>
+    <td colspan=2 align=center>  
+    <input type="submit" value="L o g i n">  
+   </td>    
+  </tr>      
+  </table>      
+  </form>     
+ </div> 
+    
+ <h2>Drop-down list box</h2>    
+ <div>
+  Select a Course:
+  <select name="course">
+    <option>select a course</option> 
+    <option>C</option>  
+    <option value="c++">CPP</option>
+    <option>Core Java</option>  
+    <option>Oracle</option>   
+    <option>Android</option>   
+  </select>     
+ </div>   
+  
+<h2>Drop-down list box with optgroup</h2>    
+ <div>
+  Select a Course:
+  <select name="course">
+   <optgroup label="Programming Languages">
+    <option>Python</option> 
+    <option>C</option>  
+    <option value="c++">CPP</option>
+    <option>Core Java</option>  
+   </optgroup>      
+   <optgroup label="Databases">
+    <option>Oracle</option>   
+    <option>MySQL</option>   
+    <option>SQL Server</option>   
+   </optgroup>       
+   <optgroup label="Mobile Technologies">
+    <option>Android</option>   
+    <option>iPhone</option>   
+   </optgroup>       
+  </select>     
+ </div> 
+    
+ <h2>Text Area </h2>    
+ <div>
+  Address:<br>
+     <textarea name="address" rows="5" cols=45></textarea>     
+ </div> 
+    
+ <h2>Datalist</h2>    
+ <div>
+  Browser Name :
+  <input list="browser_name" name="browser">
+  <datalist id="browser_name">
+   <option value="Internet Explorer"></option>   
+   <option value="Firefox">
+   <option value="Chrome">
+   <option value="Opera">
+   <option value="Safari">         
+  </datalist>     
+ </div>    
+ <div style="margin:100px"></div>    
+</body>       
+</html>

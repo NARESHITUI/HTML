@@ -1,0 +1,201 @@
+<html>
+<head>
+ <title>Job Application</title> 
+ <style>
+ body{
+ background-image:url('images/back4.jpg'); 
+ } 
+ h1{
+  text-align:center;
+  font-size: 30px;
+  font-weight:bolder;
+     
+  font-family:'Old English Text MT';     
+  text-shadow:0px 0px 10px black;      
+ }
+ table{
+  width:100%;
+  font-size:17px; 
+  color:black;
+  border-collapse:collapse
+ }  
+ fieldset
+ {
+  border:2px solid black;
+  box-shadow: 0px 0px 10px black;
+  border-radius:15px;
+  background-color:rgba(0,0,0,0.3);  
+  margin-bottom: 30px;     
+ }
+ legend
+ {
+  font-family:'Old English Text MT'; 
+  font-size:22px;
+  /*background-image:url('images/back6.jpg');*/
+  background:linear-gradient(45deg,coral,black,coral);     
+  background-size:cover;       
+  color:white;
+  padding:4px 30px;
+  width:200px;     
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;     
+ }
+ tr
+ {
+  height:35px;         
+ }
+ #edudetails td,#edudetails th     
+ {
+   border:2px solid black;     
+ }
+ input[type='text']:focus{
+  background-color:yellow;
+  font-size:16px;
+  box-shadow:0px 0px 10px yellow;     
+ }   
+ input[type='submit'], input[type='reset']{
+   background:transparent;  
+   border:2px solid black;
+   width:150px; 
+   padding:6px;
+   border-radius:15px;  
+   outline:none;     
+ }   
+input[type='submit']:hover, input[type='reset']:hover
+ {
+  background:linear-gradient(to right,coral, yellow);
+  box-shadow:0px 0px 10px coral;     
+ }
+ </style>    
+</head>
+<body>
+<h1>Job Application Form</h1>    
+<div>
+<form action="registration.php" method="post">
+<fieldset>
+<legend>Personal Details</legend>    
+<table>
+<tr>
+ <td>First Name</td>
+ <td><input type="text" name="fn" placeholder="first name" required="required" autofocus></td>  
+ <td>Middle Name</td>
+ <td><input type="text" name="mn"></td>  
+ <td>Last Name</td>
+ <td><input type="text" name="ln"></td>
+</tr>    
+    
+<tr>
+ <td>Father's Name</td>
+ <td><input type="text" name="fathn"></td>  
+ <td>Mother's Name</td>
+ <td><input type="text" name="mothn"></td>   
+</tr>   
+    
+<tr>
+ <td>Current Address</td>
+ <td>
+     <textarea name="caddress" rows=5 cols=30></textarea>     
+ </td>  
+ <td>Permanent Address</td>
+ <td>
+     <textarea name="paddress" rows=5 cols=30></textarea>     
+ </td>   
+</tr> 
+    
+<tr>
+    <td colspan=6>Phone Numbers:</td>
+</tr> 
+    
+<tr>
+ <td>Land Line</td>
+ <td><input type="text" name="phoneland"></td>  
+ <td>Mobile</td>
+ <td><input type="text" name="phonemobile"></td>   
+</tr>       
+</table> 
+</fieldset>       
+  
+    
+<fieldset>
+<legend>Educational Details</legend>    
+<table id="edudetails">
+ <thead>
+  <tr>
+   <th>Sl No</th>      
+   <th>Qualification</th>      
+   <th>College/University</th>
+   <th>Aggreggate</th>      
+   <th>Y O P</th>      
+  </tr>     
+ </thead>    
+ <tbody>
+  <td>01</td>     
+  <td>M.Tech</td>     
+  <td>CUSAT</td>     
+  <td>8.3</td>     
+  <td>2004</td>     
+ </tbody>
+  <tbody>
+  <td>02</td>     
+  <td>B.Tech</td>     
+  <td>CUSAT</td>     
+  <td>9.2</td>     
+  <td>2002</td>     
+ </tbody>    
+</table> 
+</fieldset>    
+    
+<fieldset>
+<legend>Experience Details</legend>    
+<table id="expdetails">
+ <thead>
+  <tr>
+   <th>Sl No</th>      
+   <th>Company</th>      
+   <th>Designation</th>
+   <th>Period</th>      
+   <th>Scale</th>      
+  </tr>     
+ </thead>    
+ <tbody>
+  <tr>
+  <td>01</td>     
+  <td>XYZ Company</td>     
+  <td>Manager</td>     
+  <td>2004-2010</td>     
+  <td>3</td>     
+  </tr>     
+  <tr>
+  <td>02</td>     
+  <td>ABC Company</td>     
+  <td>Lead</td>     
+  <td>2004-2010</td>     
+  <td>3</td> 
+ </tr>       
+</tbody>     
+</table> 
+</fieldset>    
+
+<fieldset>
+<legend>Declaration</legend>    
+<table id="declaration">
+ <tbody>
+  <tr>
+  <th>
+    This is to certify that the details given above are true to my knowledge
+  </th> 
+  </tr> 
+  <tr>
+  <th>
+  <input type="submit" value="S U B M I T">
+  <input type="reset" value="C L E A R"> 
+  </th>      
+  </tr>     
+  
+</tbody>     
+</table> 
+</fieldset>     
+</form>    
+</div>        
+</body>    
+</html>
