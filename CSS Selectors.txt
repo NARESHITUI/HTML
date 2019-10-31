@@ -1,0 +1,215 @@
+CSS Selectors
+==============
+1) Universal Selector
+2) Type Selectors 
+3) Class Selector  
+4) ID Selector  #id 	
+5) Group Selector    element,element 	
+6) Descendant selectors
+div p 
+{
+
+}
+
+selects all <p> elements inside <div> element
+
+<html>
+<head>
+<style>
+div  p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+<h1>Naresh Technologies</h1>
+<div>
+  <h2>My name is Naresh IT</h2>
+  <p>I live in Hyderabad</p>
+</div>
+
+<div>
+  <span>
+    <p>I did my post graduation</p>
+  </span>
+</div>
+<p>I work in software industry</p>
+</body>
+</html>
+
+
+7) Child selectors - element > element
+div > p 	
+selects all <p> elements where the parent is a <div> element
+
+<style>
+div > p {
+  background-color: yellow;
+}
+</style>
+
+
+8) Adjacent Selectors - element + element
+div + p 	
+selects <p> elements that are placed immediately after <div> elements
+
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+
+
+9) element1 ~ element2 selector
+p ~ ul 	
+selects all <ul> after <p>
+
+
+<style>
+div ~ p {
+  background-color: yellow;
+}
+</style>
+
+
+Example:
+
+<html>
+<head>
+<style> 
+p ~ ul {
+  background: #ff0000;
+}
+</style>
+</head>
+<body>
+
+<div>A div element.</div>
+<ul>
+  <li>Item-1</li>
+  <li>Item-2</li>
+</ul>
+
+<p>The first paragraph.</p>
+<ul>
+  <li>Item-1</li>
+  <li>Item-2</li>
+</ul>
+
+<h2>Another list</h2>
+<ul>
+  <li>Item-1</li>
+  <li>Item-2</li>
+</ul>
+</body>
+</html>
+
+
+10) Attribute selectors
+[target] 	
+selects all elements with a "target" attribute
+
+a[title] {
+  color: green;
+} 
+this will only select the anchor tag that have a "title" attribute
+
+<html>
+<head>
+<style>
+ a[target] {
+   background-color: yellow;
+ }
+</style>
+</head>
+<body>
+<a href="https://www.nareshit.com">N I T</a>
+<br>
+<a href="http://www.google.com" target="_blank"> google.com</a>
+<br>
+
+<a href="http://www.wikipedia.org" target="_top"> wikipedia.org</a>
+</body>
+</html>
+
+
+(b) 
+[target="_blank"] 	
+Selects all elements with target="_blank" 
+
+Example:
+a[href="https://www.nareshit.com"] 
+{
+  color: red; 
+}
+- matches any "a" element whose "href" attribute value is exactly equal to "https://www.nareshit.com" 	
+
+
+(c) [attribute ~= value] 	
+[title ~= "naresh"] 	
+-selects all elements with a "title" attribute containing the word "naresh"
+
+(d) [attribute ^= value] 	
+a[href ^= "https"] 	
+-selects every <a> element whose "href" attribute value begins with "https"
+
+(e) [attribute $= value] 	
+a[href $= ".com"] 	
+-selects every <a> element whose "href" attribute value ends with ".com"
+
+(f) [attribute *= value] 	
+a[href *= "nareshit"] 	
+-selects every <a> element whose "href" attribute value contains the substring "nareshit"
+
+
+
+11)  pseudo-class selectors
+--------------------------
+
+13) :after 
+p:after  
+- insert some content after each <p> element 	
+
+14) :before  
+p:before 
+- insert content before each <p> element 	
+
+li:after{
+ content: "@ NIT"
+}
+
+body:after {
+    content: "THE END";
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size:30px;
+    font-weight:bolder;
+}
+
+:first-letter 	
+p::first-letter - selects the first letter of every <p> element 	
+
+:first-line 	
+p::first-line - selects the first line of every <p> element 	
+
+:focus 	input:focus 	
+Selects the input element which has focus 	
+
+:hover 	a:hover 	
+Selects links on mouse over 	
+
+:link 	a:link 	
+Selects all unvisited links 	
+
+:visited 	
+a:visited 	Selects all visited links 	
+
+-------------------------------------
+
+
+
+
+
+
+

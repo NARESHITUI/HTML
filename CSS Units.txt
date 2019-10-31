@@ -1,0 +1,91 @@
+CSS UNITS
+=========
+Two type of units: 
+ 1) relative units and  
+ 2) absolute units
+
+(1) Relative Units - specify a unit relative to another unit.
+
+em  - relative to the font-size of the element 
+(2em means 2 times the size of the current font size) 
+
+Example:
+<html>
+<head>
+<style type="text/css">
+p {
+ font-size: 16px;
+ line-height: 3em;     
+}
+div { 
+ font-size: 30px;
+ border: 5px solid red;
+ padding: 20px;
+}
+span {
+ font-size: 2em; 
+}
+</style>
+</head>
+<body>
+<p>This is a Paragraph <br>
+   This is another line
+</p>
+<div>
+ Naresh i Tech <span>Ameerpet</span> Hyderabad
+</div>
+</body>
+</html>
+
+
+For example, the font size <h1> heading elements may be set to 3em and the body kept at 1em, making sure that under all display conditions heading text will be 3 times as large as the body's. It must be noted that when used as a font-size property value, the em unit refers to the font size of the parent element. Thus, in our example, a <span> element inside an <h1> with font-size: 2em would end up with text 6 times larger than in the body.
+
+
+<html>
+<head>
+<style>
+body
+{
+  font-family:verdana;
+  font-size:20px;
+}
+div
+{
+  font-size:2em;
+}
+</style>
+</head>
+<body>
+<div>
+ One
+ <div>
+   Two
+    <div>
+      Three
+    </div>
+ </div>
+</div>
+</body>
+</html>
+
+
+Absolute Lengths
+===============
+The absolute length units are fixed , will appear as exactly that size.
+
+1) cm 	centimeters  (1cm = 37.8px)
+
+2) mm 	millimeters (1mm == 0.1cm == 3.78px)
+
+3) in 	inches (1in = 96px = 2.54cm) 
+
+4) px  	pixels (1px = 1/96th of 1in) 
+
+5) pt 	points (1pt = 1/72 of 1in) 
+
+6) pc 	picas (1pc = 12 pt) 
+
+
+
+
+
